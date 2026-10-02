@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homelab-security-digest"
+version = "0.1.0"
+description = "A privacy-first security digest for self-hosted environments."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Bernardo Pugnaloni"}]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0", "build>=1.2"]
+
+[project.scripts]
+homelab-security-digest = "homelab_security_digest.core:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

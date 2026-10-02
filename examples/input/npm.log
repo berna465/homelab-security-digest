@@ -1,0 +1,2 @@
+[01/Oct/2026:10:00:00 +0000] - 404 404 - GET https example.com "/probe-01" [Client 203.0.113.20] [Length 0]
+[01/Oct/2026:10:00:01 +0000] - 404 404 - GET https example.com "/probe-02" [Client 203.0.113.20] [Length 0]

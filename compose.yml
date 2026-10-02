@@ -1,0 +1,20 @@
+services:
+  security-digest:
+    build: .
+    image: homelab-security-digest:0.1.0
+    user: "65532:65532"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    network_mode: ${SECURITY_DIGEST_NETWORK_MODE:-none}
+    mem_limit: ${SECURITY_DIGEST_MEMORY_LIMIT:-512m}
+    restart: "no"
+    env_file:
+      - path: .env
+        required: false
+    command: ["--hours", "24", "--output-dir", "/output"]
+    volumes:
+      - ${SECURITY_DIGEST_INPUT_ROOT:-./examples/input}:/input:ro
+      - ${SECURITY_DIGEST_OUTPUT_PATH:-./output}:/output
+    tmpfs:
+      - /tmp:size=16m,mode=1777

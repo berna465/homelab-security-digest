@@ -1,0 +1,22 @@
+[
+  {"timestamp":"2026-10-01T10:10:00+00:00","ip":"203.0.113.251","status":444,"path":"/.vite/manifest.json","line":1,"event_hash":"scanner-2-01","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:01+00:00","ip":"203.0.113.251","status":444,"path":"/rclone.conf","line":2,"event_hash":"scanner-2-02","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:02+00:00","ip":"203.0.113.251","status":404,"path":"/icecoder/lib/terminal-xhr.php","line":3,"event_hash":"scanner-2-03","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:03+00:00","ip":"203.0.113.251","status":405,"path":"/graphql","line":4,"event_hash":"scanner-2-04","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:04+00:00","ip":"203.0.113.251","status":403,"path":"/api/console/api_server","line":5,"event_hash":"scanner-2-05","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:05+00:00","ip":"203.0.113.251","status":444,"path":"/docker/.env","line":6,"event_hash":"scanner-2-06","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:06+00:00","ip":"203.0.113.251","status":444,"path":"/.git/HEAD","line":7,"event_hash":"scanner-2-07","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:07+00:00","ip":"203.0.113.251","status":404,"path":"/actuator/health","line":8,"event_hash":"scanner-2-08","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:08+00:00","ip":"203.0.113.251","status":404,"path":"/../../etc/passwd","line":9,"event_hash":"scanner-2-09","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:09+00:00","ip":"203.0.113.251","status":404,"path":"/wp-login.php","line":10,"event_hash":"scanner-2-10","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:10+00:00","ip":"203.0.113.251","status":404,"path":"/config/settings.json","line":11,"event_hash":"scanner-2-11","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:11+00:00","ip":"203.0.113.251","status":404,"path":"/database.sql","line":12,"event_hash":"scanner-2-12","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:12+00:00","ip":"203.0.113.251","status":404,"path":"/old/app.bak","line":13,"event_hash":"scanner-2-13","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:13+00:00","ip":"203.0.113.251","status":404,"path":"/swagger-ui/index.html","line":14,"event_hash":"scanner-2-14","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:14+00:00","ip":"203.0.113.251","status":404,"path":"/phpmyadmin/","line":15,"event_hash":"scanner-2-15","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:15+00:00","ip":"203.0.113.251","status":404,"path":"/backup.zip","line":16,"event_hash":"scanner-2-16","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:16+00:00","ip":"203.0.113.251","status":404,"path":"/server-status","line":17,"event_hash":"scanner-2-17","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:17+00:00","ip":"203.0.113.251","status":404,"path":"/debug/vars","line":18,"event_hash":"scanner-2-18","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:18+00:00","ip":"203.0.113.251","status":404,"path":"/appsettings.json","line":19,"event_hash":"scanner-2-19","client_ip_trusted":true},
+  {"timestamp":"2026-10-01T10:10:19+00:00","ip":"203.0.113.251","status":404,"path":"/config/.env.old","line":20,"event_hash":"scanner-2-20","client_ip_trusted":true}
+]

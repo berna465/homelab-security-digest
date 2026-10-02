@@ -1,0 +1,6 @@
+2026-09-26T10:00:00+00:00 fw filterlog: 5,,,test-label,wan0,match,block,in,4,0x0,,64,12345,0,DF,6,tcp,60,198.51.100.20,192.0.2.10,51000,443,0,S,1,,65535,,mss
+2026-09-26T10:00:01+00:00 fw filterlog: 5,,,test-label,wan0,match,block,in,4,0x0,,64,12346,0,none,17,udp,76,203.0.113.20,192.0.2.10,52000,53,56
+2026-09-26T10:00:02+00:00 fw filterlog: 5,,,test-label,wan0,match,block,in,4,0x0,,64,12347,0,none,1,icmp,84,198.51.100.21,192.0.2.10,request,8,0
+2026-09-26T10:00:03+00:00 fw filterlog: 5,,,test-label,wan0,match,block,in,6,0x00,0x00000,64,tcp,6,60,2001:db8:1::20,2001:db8:2::10,53000,443,0,S,1,,65535,,mss
+2026-09-26T10:00:04+00:00 fw filterlog: 5,,,test-label,wan0,match,block,out,4,0x0,,64,12348,0,DF,6,tcp,60,192.0.2.10,198.51.100.22,443,54000,0,S,1,,65535,,mss
+2026-09-26T10:00:05+00:00 fw filterlog: 5,,,test-label,wan0,match,pass,in,4,0x0,,64,12349,0,DF,6,tcp,60,198.51.100.23,192.0.2.10,55000,443,0,S,1,,65535,,mss

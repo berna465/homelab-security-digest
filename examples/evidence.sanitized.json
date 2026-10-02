@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "window_hours": 24,
+  "status": "ready",
+  "candidates": [],
+  "diagnostics": {"status": "ready"},
+  "findings": [],
+  "cloud_used": false,
+  "telegram_sent": false,
+  "runtime_metrics": {"elapsed_seconds": 0.042, "max_rss_mib": 18.2}
+}

@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest -q
+      - run: python -m build
+      - run: python -m venv "$RUNNER_TEMP/wheel-venv"
+      - run: "$RUNNER_TEMP/wheel-venv/bin/python -m pip install dist/*.whl"
+      - run: "$RUNNER_TEMP/wheel-venv/bin/homelab-security-digest --help"
+      - run: python -m homelab_security_digest --npm-log examples/input/npm.log --authelia-log examples/input/authelia.json --opnsense-log examples/input/filterlog.log --traefik-log examples/input/traefik.json --output-dir "$RUNNER_TEMP/digest-output"
+      - run: python -m compileall -q src tests
+      - run: git diff --check
+      - name: Validate Compose and build image
+        run: |
+          if command -v docker >/dev/null 2>&1 && docker compose version >/dev/null 2>&1; then
+            docker compose --env-file .env.example config
+            docker compose --env-file .env.example build
+          else
+            echo "Docker/Compose unavailable; container checks not run"
+          fi

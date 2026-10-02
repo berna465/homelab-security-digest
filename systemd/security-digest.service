@@ -1,0 +1,13 @@
+[Unit]
+Description=Local Homelab Security Digest
+
+[Service]
+Type=oneshot
+User=security-digest
+ExecStart=/usr/local/bin/homelab-security-digest --hours 24 --output-dir /var/lib/security-digest/output
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadOnlyPaths=/var/log
+ReadWritePaths=/var/lib/security-digest/output
